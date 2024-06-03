@@ -28,7 +28,7 @@
 
 <section class="container mx-auto md:w-2/3 border p-8 mt-5">
     <div class="flex justify-between items-start">
-        <h1 class="text-5xl">{{$product->color}} - £{{$product->price}} </h1>
+        <h1 class="text-5xl">{{$product->color}} - {{$product->price}} </h1>
         <span class="bg-teal-500 px-2 rounded">Stock: {{$product->stock}}</span>
     </div>
     <h2 class="text-3xl mt-3">Dimensions</h2>
@@ -41,7 +41,7 @@
 <section class="container mx-auto md:w-2/3 border p-8 mt-10">
     <h1 class="text-3xl border-b pb-3 mb-3">Similar Product</h1>
     <div class="flex justify-between items-start">
-        <p class="text-2xl">£{{$relatedProduct->price}}</p>
+        <p class="text-2xl">{{$relatedProduct->price}}</p>
         <span class="bg-teal-500 px-2 rounded">Stock: {{$relatedProduct->stock}}</span>
     </div>
     <div class="flex justify-between items-start">
