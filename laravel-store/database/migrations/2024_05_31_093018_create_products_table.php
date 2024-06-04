@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->foreignId('category_id');
+//            $table->foreignId('review_id');
             $table->integer('width');
             $table->integer('height');
             $table->integer('depth');

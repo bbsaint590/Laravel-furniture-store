@@ -28,13 +28,19 @@
 
 <section class="container mx-auto md:w-2/3 border p-8 mt-5">
     <div class="flex justify-between items-start">
-        <h1 class="text-5xl">{{$product->color}} - {{$product->price}} </h1>
+        <h1 class="text-5xl">{{$product->color}} - {{$product->price}} @if(($product->category->name) !== null) - {{$product->category->name}} @endif </h1>
         <span class="bg-teal-500 px-2 rounded">Stock: {{$product->stock}}</span>
     </div>
     <h2 class="text-3xl mt-3">Dimensions</h2>
     <p class="mt-2">Width: {{$product->width}}mm</p>
     <p class="mt-3">Height: {{$product->height}}mm</p>
     <p class="mt-3">Depth: {{$product->depth}}mm</p>
+    <h3>Tags</h3>
+    <ul>
+        @foreach($product->tags as $tag)
+    <li>{{$tag->name}}</li>
+        @endforeach
+    </ul>
 </section>
 
 @if(($relatedProduct) !== null) {
