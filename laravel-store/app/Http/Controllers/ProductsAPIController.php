@@ -19,10 +19,21 @@ class ProductsAPIController extends Controller
 
     public function create(Request $request)
     {
+        $request->validate([
+
+        'category_id' => 'required|integer|exists:categories,id',
+        'width' => 'required|integer|min:0',
+        'height' => 'required|integer|min:0',
+        'depth' => 'required|integer|min:0',
+        'price' => 'required|integer|min:0|max:10000',
+        'stock' => 'required|integer|min:0',
+        'related' => 'required|integer|exists:products,id',
+        'color' => 'required|string|max:50',
+
+        ]);
         //instantiate new product
         $product = new Product();
 //take the data from the request and save it on the product
-        $product->id = $request->id;
         $product->category_id = $request->category_id;
         $product->width = $request->width;
         $product->height = $request->height;
