@@ -19,23 +19,33 @@ This furniture store is a Laravel project that fetches and displays information 
 1. Clone this repo:
    ```bash
    git clone git@github.com:bbsaint590/Laravel-furniture-store.git
+   
 2. Navigate into the newly created repo:
    ```bash
    cd Laravel-furniture-store
+   
 3. From the root of the project, run:
    ```bash
    composer install
+   
 4. Generate the application key:
    ```bash
    php artisan key:generate
+   
 5. Create a new MySQL database named laravel_furniture_store and import the provided 
    SQL file: /laravel_furniture_store_2024-05-31.sql
-6. Ensure your local database host, username, and password details are correct in the 
-   .env file.
-7. Run the database migrations (if needed):
+   
+7. Ensure that details are correct in the .env file, in order to connect the 
+   database.
+   DB_CONNECTION=mysql, 
+   DB_DATABASE=laravel_furniture_store, and 
+   DB_PASSWORD=password
+   
+9. Run the database migrations (if needed):
    ```bash
    php artisan migrate
-8. Start the Laravel development server:
+   
+10. Start the Laravel development server:
    ```bash
    php artisan serve
   The application will now be available at http://localhost:8000.
