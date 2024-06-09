@@ -41,21 +41,29 @@ This furniture store is a Laravel project that fetches and displays information 
    DB_DATABASE=laravel_furniture_store, and 
    DB_PASSWORD=password
    
-9. Run the database migrations (if needed):
-   ```bash
-   php artisan migrate
-   
-10. Start the Laravel development server:
-   ```bash
-   php artisan serve
-  The application will now be available at http://localhost:8000.
+8. **Run the database migrations (if needed):**
 
-### Authors
+    ```bash
+    php artisan migrate
+    ```
 
-- Ben Blyth - @bbsaint590
+9. **Start the Laravel development server:**
 
-### Links
+    ```bash
+    php artisan serve
+    ```
 
-- GitHub Repo: https://github.com/bbsaint590/Laravel-furniture-store
+The application will now be available at [http://localhost:8000](http://localhost:8000).
 
-### Acknowledgements
+## Authors
+
+- Ben Blyth - [@bbsaint590](https://github.com/bbsaint590)
+
+## Links
+
+- GitHub Repo: [https://github.com/bbsaint590/Laravel-furniture-store](https://github.com/bbsaint590/Laravel-furniture-store)
+
+## Acknowledgements
+
+- Laravel Framework Documentation: [https://laravel.com/docs](https://laravel.com/docs)
+- Any other libraries, tools, or individuals who contributed to the project.
