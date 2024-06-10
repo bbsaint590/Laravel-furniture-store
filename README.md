@@ -1,6 +1,6 @@
 # Laravel Furniture Store
 
-A furniture store website organized by different categories to provide an easy user experience and satisfy your furniture needs.
+A furniture store website organised by different categories to provide an easy user experience and satisfy your furniture needs.
 
 ## Description
 
