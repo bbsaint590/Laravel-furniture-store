@@ -27,27 +27,23 @@ This furniture store is a Laravel project that fetches and displays information 
 3. From the root of the project, run:
    ```bash
    composer install
-   
-4. Generate the application key:
-   ```bash
-   php artisan key:generate
-   
-5. Create a new MySQL database named laravel_furniture_store and import the provided 
+
+4. Create a new MySQL database named laravel_furniture_store and import the provided 
    SQL file: /laravel_furniture_store_2024-05-31.sql
    
-7. Ensure that details are correct in the .env file, in order to connect the 
+5. Ensure that details are correct in the .env file, in order to connect the 
    database.
    DB_CONNECTION=mysql, 
    DB_DATABASE=laravel_furniture_store, and 
    DB_PASSWORD=password
    
-8. **Run the database migrations (if needed):**
+6. **Run the database migrations (if needed):**
 
     ```bash
     php artisan migrate
     ```
 
-9. **Start the Laravel development server:**
+7. **Start the Laravel development server:**
 
     ```bash
     php artisan serve
