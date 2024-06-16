@@ -1,10 +1,10 @@
 # Laravel Furniture Store
 
-A furniture store website organised by different categories to provide an easy user experience and satisfy your furniture needs.
+A furniture store website organised into different categories to provide an easy user experience and satisfy your furniture needs.
 
 ## Description
 
-This furniture store is a Laravel project that fetches and displays information about various furniture products from a MySQL database. After selecting a furniture category, you can find detailed information about individual products, including dimensions and related products.
+This furniture store is a Laravel project that displays information about various furniture products from a MySQL database. After selecting a furniture category, you can find detailed information about individual products - including their dimensions and other related products.
 
 ## Getting Started
 
@@ -28,14 +28,13 @@ This furniture store is a Laravel project that fetches and displays information 
    ```bash
    composer install
 
-4. Create a new MySQL database named laravel_furniture_store and import the provided 
-   SQL file: /laravel_furniture_store_2024-05-31.sql
+4. Create a new MySQL database named laravel_furniture_store.
    
-5. Ensure that details are correct in the .env file, in order to connect the 
+5. 7. Copy the .env.example file and save as .env. Ensure that your details are correct in the .env file, in order to connect the 
    database.
    DB_CONNECTION=mysql, 
    DB_DATABASE=laravel_furniture_store, and 
-   DB_PASSWORD=password
+   DB_PASSWORD=******
    
 6. **Run the database migrations (if needed):**
 
